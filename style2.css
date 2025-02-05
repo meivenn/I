@@ -1,0 +1,12 @@
+button {
+  background-color: green;
+  color: white;
+}
+body{
+  background-color: lightblue;
+  background-image: url("Maris-BelgischPark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+}
