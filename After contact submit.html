@@ -1,111 +1,51 @@
+<link href="style2.css" rel="stylesheet" type="text/css"/>
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="header">
+  <h3>Mediatheek</h3>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home page</a>
+    <a href="Over ons.html">Over ons</a>
+    <a href="Openingstijden.html">Openingstijden</a>
+    <a href="boeken.html">Boeken Zoeken</a>
+    <a href="Veelgestelde vragen.html">Veelgestelde vragen</a>
+  </div>
+</div>
+</html>
+<title>Contact</title>
 <style>
-    * {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: lightblue;
-  color: white;
-  background-image: url("Maris-BelgischPark.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 20px;
-}
-  
-  button {
-    background-color: green;
+  .centered {
+    text-align: center;
+  }
+  .container {
     color: white;
-    height: 30px;
+    text-align: center;
   }
-
-.header {
-  background-color: #f1f1f1;
-  padding: 3px;
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 2.5rem;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.search-container {
-  float: right;
-}
-
-.search-container input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: black;
-  font-size: 17px;
-}
-
-.search-container button {
-  background-color: green;
-  color: white;
-  padding: 6px 12px;
-  margin-top: 8px;
-  border: none;
-  cursor: pointer;
-}
-
-.search-container button:hover {
-  background-color: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .search-container {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-  }
-
-  .search-container input[type=text] {
-    width: 100%;
-  }
-}
-    .centered {
-        text-align: center;
-    }
 </style>
-<h1>Bedankt voor de reactie</h1>
-<h1>We reageren zo snel mogelijk op uw bericht</h1>
-<h1>Je wordt nu teruggestuurd naar de Home Pagina</h1>
-<script>
-    // Redirect na 3 seconden
-    setTimeout(function() {
-        window.location.href = 'index.html';
-    }, 3000);
-</script>
+<span style="color: white;">
+<h1 class="centered">Contact Formulier</h1>
+<div class="container">
+  <form action="https://formsubmit.co/garskampiven@gmail.com" method="post">
+
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="hidden" name="_next" value="https://meivenn.github.io/informatica-4havo/After contact submit.html">
+    <h1>Bericht is verstuurd!</h1>
+    <h2>Wij beantwoorden uw bericht zo snel mogelijk!</h2>
+  </div>
+
+    <label for="bericht"></label>
+    <textarea id="bericht" name="bericht" placeholder="Schrijf hier je bericht" style="height:200px" required></textarea>
+<center></center>
+<div class="file-actions">
+  <input type="file" id="file-upload">
+    <input type="submit" value="Submit">
+  </form>
+</div>
