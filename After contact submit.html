@@ -31,7 +31,7 @@
 <span style="color: white;">
 <h1 class="centered">Contact Formulier</h1>
 <div class="container">
-  
+
     <!-- Disable Captcha -->
     <input type="hidden" name="_captcha" value="false">
 
@@ -39,4 +39,10 @@
     <h1>Bericht is verstuurd!</h1>
     <h2>Wij beantwoorden uw bericht zo snel mogelijk!</h2>
   </div>
+  <script>
+    // Redirect na 3 seconden
+    setTimeout(function() {
+        window.location.href = 'Home page.html';
+    }, 3000);
+</script>
 </div>
