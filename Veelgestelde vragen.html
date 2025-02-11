@@ -128,11 +128,61 @@ body{
 </div>
 </html>
 <title>Veelgestelde vragen</title>
-<span style="color: grey;">
-<div class="white-box">
-<h1>Veelgestelde vragen</h1>
-<h2>Hoe kan ik boeken in de mediatheek lenen?</h2>
-<h3>Je kan boeken in de mediatheek lenen door middel van je leerlingennummer te geven aan de medewerker en de medewerker slaat die gegevens van jou op zodat wij weten wie welk boek heeft uitgeleend. Hierdoor kunnen we achterhalen wie een schuld krijgt bij de mediatheek voor het te laat inleveren van een boek en kunnen we geld opeisen. We kunnen hiermee ook zien welke boeken we op voorraad hebben en welke niet.</h3>
-<h2>Hoe weet ik wanneer mijn boek teruggebracht moet worden?</h2>
-<h3>De mediatheek stuurt je een mailtje waarbij wordt verteld wanneer je het boek hebt uitgeleend en wanneer het boek weer teruggebracht moet worden.</h3>
-</div>
+<span style="color: black;">
+  <h1>Veelgestelde vragen</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veelgestelde vragen</title>
+    <style>
+        .faq-container {
+            width: 50%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+        .faq-answer {
+            display: none;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">Hoe weet ik wanneer ik mijn boek moet terugbrengen? <span>+</span></div>
+            <div class="faq-answer">De mediatheek stuurt je een mailtje waarbij wordt verteld wanneer je het boek hebt uitgeleend en wanneer het boek weer teruggebracht moet worden.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Hoe kan ik boeken lenen in de mediatheek? <span>+</span></div>
+            <div class="faq-answer">Je kan boeken in de mediatheek lenen door middel van je leerlingennummer te geven aan de medewerker en de medewerker slaat die gegevens van jou op zodat wij weten wie welk boek heeft uitgeleend. Hierdoor kunnen we achterhalen wie een schuld krijgt bij de mediatheek voor het te laat inleveren van een boek en kunnen we geld opeisen. We kunnen hiermee ook zien welke boeken we op voorraad hebben en welke niet.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+                document.querySelectorAll('.faq-question span').forEach(span => span.textContent = '+');
+                answer.style.display = isVisible ? 'none' : 'block';
+                item.querySelector('span').textContent = isVisible ? '+' : '-';
+            });
+        });
+    </script>
+</body>
+</html>
