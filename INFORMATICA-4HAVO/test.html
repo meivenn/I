@@ -1,0 +1,23 @@
+<script src="https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    window.AgentInitializer.init({
+      rootId: "JotformAgent-0194f1776ecd70088beb9bb02e750a4e1d1b",
+      formID: "0194f1776ecd70088beb9bb02e750a4e1d1b",
+      queryParams: ["skipWelcome=1", "maximizable=1"],
+      domain: "https:\/\/eu.jotform.com",
+      isInitialOpen: false,
+      isDraggable: false,
+      background: "linear-gradient(180deg, #C8CEED 0%, #C8CEED 100%)",
+      buttonBackgroundColor: "#0a1551",
+      buttonIconColor: "#fff",
+      variant: false,
+      customizations: {
+        greeting: "Yes",
+        greetingMessage: "Hey! Hoe kan ik je helpen?",
+        pulse: "Yes",
+        position: "right"
+      }
+    });
+  });
+</script>
